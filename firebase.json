@@ -1,0 +1,7 @@
+{
+  "hosting": {
+    "site": "my-gallery-16106",
+    "public": ".output/public",
+    "cleanUrls": true
+  }
+}
