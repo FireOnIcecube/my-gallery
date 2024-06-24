@@ -2,6 +2,8 @@
 import { storage } from "../firebase/index";
 import { ref, listAll, getDownloadURL } from "firebase/storage";
 
+const runtimeConfig = useRuntimeConfig();
+
 const storageRef = ref(storage);
 
 const imgRefs = await listAll(storageRef).then((res) => res.items);
@@ -11,6 +13,7 @@ console.log(imgUrls);
 
 <template>
   <div>
+    <div>bucket : {{ runtimeConfig.public.STORAGE_BUCKET }}</div>
     <div v-for="imgSrc of imgUrls">
       <img :src="imgSrc" />
     </div>
