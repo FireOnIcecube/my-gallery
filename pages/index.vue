@@ -13,7 +13,6 @@ console.log(imgUrls);
 
 <template>
   <div>
-    <h1>Test</h1>
     <div>bucket : {{ runtimeConfig.public.STORAGE_BUCKET }}</div>
     <div v-for="imgSrc of imgUrls">
       <img :src="imgSrc" />
