@@ -3,6 +3,8 @@ export default defineNuxtConfig({
   ssr: false,
 
   devtools: { enabled: true },
+
+  modules: ["@nuxtjs/tailwindcss"],
   runtimeConfig: {
     public: {
       API_KEY: process.env.API_KEY,
