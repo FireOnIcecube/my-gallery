@@ -1,8 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: false,
-
   devtools: { enabled: true },
+
   runtimeConfig: {
     public: {
       API_KEY: process.env.API_KEY,
@@ -14,4 +14,6 @@ export default defineNuxtConfig({
       MEASUREMENT_ID: process.env.MEASUREMENT_ID,
     },
   },
+
+  modules: ["@primevue/nuxt-module", "@vueuse/nuxt", "@nuxt/eslint"],
 });

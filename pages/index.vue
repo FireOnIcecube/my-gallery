@@ -13,8 +13,15 @@ console.log(imgUrls);
 
 <template>
   <div>
+    <AutoComplete
+      v-model="value"
+      dropdown
+      :suggestions="items"
+      @complete="search"
+    />
+
     <div>bucket : {{ runtimeConfig.public.STORAGE_BUCKET }}</div>
-    <div v-for="imgSrc of imgUrls">
+    <div :key="imgSrc" v-for="imgSrc of imgUrls">
       <img :src="imgSrc" />
     </div>
   </div>
