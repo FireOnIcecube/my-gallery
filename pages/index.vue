@@ -11,12 +11,7 @@ const imgUrls = await Promise.all(imgRefs.map((item) => getDownloadURL(item)));
 
 <template>
   <div>
-    <AutoComplete
-      v-model="value"
-      dropdown
-      :suggestions="items"
-      @complete="search"
-    />
+    <NavBar />
 
     <div>bucket : {{ runtimeConfig.public.STORAGE_BUCKET }}</div>
     <div :key="imgSrc" v-for="imgSrc of imgUrls">

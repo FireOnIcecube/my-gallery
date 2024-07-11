@@ -11,18 +11,18 @@
   },
   "dependencies": {
     "@nuxt/eslint": "^0.3.13",
+    "@primevue/themes": "^4.0.0",
     "firebase": "10.12.2",
     "nuxt": "^3.11.2",
-    "nuxt-primevue": "^3.0.0",
     "primevue": "^4.0.0",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2"
   },
   "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.12.0",
     "@primevue/nuxt-module": "^4.0.0",
     "@vueuse/core": "^10.11.0",
     "@vueuse/nuxt": "^10.11.0",
-    "@nuxtjs/tailwindcss": "^6.12.0",
     "typescript": "^5.5.2"
   }
 }

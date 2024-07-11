@@ -1,3 +1,5 @@
+import Aura from "@primevue/themes/aura";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: false,
@@ -15,5 +17,18 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@primevue/nuxt-module", "@vueuse/nuxt", "@nuxt/eslint"],
+  modules: [
+    "@vueuse/nuxt",
+    "@nuxt/eslint",
+    "@nuxtjs/tailwindcss",
+    "@primevue/nuxt-module",
+  ],
+
+  primevue: {
+    options: {
+      theme: {
+        preset: Aura,
+      },
+    },
+  },
 });
